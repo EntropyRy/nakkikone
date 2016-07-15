@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   helper_method :current_user
-  before_filter :require_login
+  before_action :require_login
   rescue_from ActiveRecord::RecordNotFound, User::Unauthorized, User::Unauthenticated, :with => :mapped_exceptions
-  skip_before_filter :require_login, :only => [:bootstrap]
+  skip_before_action :require_login, :only => [:bootstrap]
   
   def bootstrap
     # here we bootstrap the application so that we render static html page where the javacscript injection is present

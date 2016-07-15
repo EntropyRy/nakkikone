@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :password, :password_confirmation, :name, :number, :role, :nick
+#  attr_accessible :email, :password, :password_confirmation, :name, :number, :role, :nick
+  def create
+    User.create(user_params)
+  end
   
   attr_accessor :password
   before_save :encrypt_password
@@ -11,7 +14,7 @@ class User < ActiveRecord::Base
   :presence => true, 
   :uniqueness => { :case_sensitive => false }, 
   :format => { 
-    :with => /^.+@.+$/, #TODO replace with better one
+    :with => /\A\S+@.+\.\S+\z/, #TODO replace with better one
     :message => "%{value} is not valid email (our opinion, you might disagree)"
   }
 
@@ -48,4 +51,8 @@ class User < ActiveRecord::Base
 
   class Unauthenticated < StandardError
   end
+  private
+    def user_params
+      params.require(:user).permit(:email, :password, :password_confirmation, :name, :number, :role, :nick)
+    end
 end

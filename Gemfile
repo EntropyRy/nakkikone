@@ -1,20 +1,21 @@
 source 'https://rubygems.org'
 
 gem 'capistrano'
-gem 'rvm-capistrano', :require => false
+gem 'rvm-capistrano', require: false
 gem 'rake'
 
-gem 'rails', '3.2.6'
+gem 'rails', '5.0.0'
 gem 'json'
-gem 'bcrypt-ruby', :require => 'bcrypt'
+gem 'listen'
+gem 'bcrypt-ruby', require: 'bcrypt'
 gem 'mysql2'
 gem 'active_model_serializers', :github => 'rails-api/active_model_serializers'
-gem 'requirejs-rails', '= 0.9.5'
-gem 'jquery-rails', '>= 1.0.17'
+gem 'requirejs-rails'
+gem 'jquery-rails'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'uglifier',     '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'uglifier'
   gem 'therubyracer'
 end
 

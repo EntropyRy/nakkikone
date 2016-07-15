@@ -10,12 +10,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Nakkikone 2.8</title>
+    <title>Nakkikone 2.81</title>
     <meta name="description" content="Single page application to manage small party organizations">
 
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="http://entropy.fi/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://entropy.fi/favicon.ico" />
 
     <%= stylesheet_link_tag '_bootstrap.min.css' %>
     <%= stylesheet_link_tag 'bootstrap-responsive.min.css' %>
@@ -27,6 +27,7 @@
     <%= stylesheet_link_tag 'style.css' %>
 
     <%= requirejs_include_tag "application" %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tag %>
   </head>
   <body>
@@ -62,7 +63,7 @@
     <div class="row-fluid">
       <footer class="span12">
 	<p class="space">&copy; Entropy 2016</p>
-	<p><small>If you find a bug, please report it to <a href="mailto:webmaster@entropy.fi">webmaster</a> or <a href="https://github.com/EntropyRy/nakkikone/issues">to github issues</a>.</small></p>
+	<p class="noprint"><small>If you find a bug, please report it to <a href="mailto:webmaster@entropy.fi">webmaster</a> or <a href="https://github.com/EntropyRy/nakkikone/issues">to github issues</a>.</small></p>
       </footer>
     </div>
     </div>

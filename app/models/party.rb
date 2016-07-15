@@ -1,6 +1,8 @@
 class Party < ActiveRecord::Base
-  attr_accessible :title, :description, :date, :info_date, :aux_jobs_enabled
-
+#  attr_accessible :title, :description, :date, :info_date, :aux_jobs_enabled
+  def create
+     Party.create(party_params)
+  end
   has_many :aux_nakkis, :dependent => :delete_all
   has_many :nakkitypes, :dependent => :delete_all
   
@@ -28,4 +30,8 @@ class Party < ActiveRecord::Base
   end
 
   validates_with Party::PartyTimeValidator
+  private
+    def party_params
+      params.require(:party).permit(:title, :description, :date, :info_date, :aux_jobs_enabled)
+    end
 end

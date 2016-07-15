@@ -8,7 +8,7 @@ RailStrap::Application.routes.draw do
   get "reset_password" => "users#reset_password"
 
   get "login" => "sessions#new"
-  post "login" => "sessions#create", :as => "login"
+  post "login" => "sessions#create", :as => "log_in"
  
   get "logout" => "sessions#destroy", :as => "logout"
 
