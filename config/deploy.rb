@@ -3,8 +3,8 @@ require "bundler/capistrano"
 
 set :application, "nakkikone"
 
-set :repository, "https://github.com/EntropyRy/nakkikone.git"
-set :branch, "master"
+set :repository, "git://github.com/EntropyRy/nakkikone.git"
+set :branch, "hotfix/old-environment"
 set :git_enable_submodules, 1
 set :scm_verbose, true
 

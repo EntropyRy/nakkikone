@@ -1,24 +1,24 @@
 [submodule "vendor/assets/javascripts/require-handlebars-plugin"]
 	path = vendor/assets/javascripts/require-handlebars-plugin
-	url = https://github.com/SlexAxton/require-handlebars-plugin.git
+	url = git://github.com/SlexAxton/require-handlebars-plugin.git
 [submodule "vendor/assets/javascripts/backbone"]
 	path = vendor/assets/javascripts/backbone
-	url = https://github.com/documentcloud/backbone.git
+	url = git://github.com/documentcloud/backbone.git
 [submodule "vendor/assets/javascripts/underscore"]
 	path = vendor/assets/javascripts/underscore
-	url = https://github.com/documentcloud/underscore.git
+	url = git://github.com/documentcloud/underscore.git
 [submodule "vendor/assets/javascripts/bootstrap-datepicker"]
 	path = vendor/assets/javascripts/bootstrap-datepicker
-	url = https://github.com/eternicode/bootstrap-datepicker.git
+	url = git://github.com/eternicode/bootstrap-datepicker.git
 [submodule "vendor/assets/javascripts/bootstrap-timepicker"]
 	path = vendor/assets/javascripts/bootstrap-timepicker
-	url = https://github.com/jdewit/bootstrap-timepicker.git
+	url = git://github.com/jdewit/bootstrap-timepicker.git
 [submodule "vendor/assets/javascripts/moment"]
 	path = vendor/assets/javascripts/moment
-	url = https://github.com/timrwood/moment.git
+	url = git://github.com/timrwood/moment.git
 [submodule "vendor/assets/javascripts/wysihtml5"]
 	path = vendor/assets/javascripts/wysihtml5
-	url = https://github.com/xing/wysihtml5.git
+	url = git://github.com/xing/wysihtml5.git
 [submodule "vendor/assets/javascripts/bootstrap-wysihtml5"]
 	path = vendor/assets/javascripts/bootstrap-wysihtml5
-	url = https://github.com/jhollingworth/bootstrap-wysihtml5.git
+	url = git://github.com/jhollingworth/bootstrap-wysihtml5.git
